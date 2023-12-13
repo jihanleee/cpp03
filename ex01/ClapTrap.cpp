@@ -3,7 +3,7 @@
 # include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap() {
-	std::cout << "Default constructor called\n";
+	std::cout << "ClapTrap Default constructor called\n";
 	_name = "NO NAME";
 	_hitPoints = 10;
 	_energyPoints = 10;
@@ -19,7 +19,7 @@ ClapTrap::ClapTrap(std::string name) {
 }
 
 ClapTrap::~ClapTrap() {
-	std::cout << "Destructor called\n";
+	std::cout << "ClapTrap Destructor called\n";
 }
 
 ClapTrap::ClapTrap(ClapTrap &a) {
@@ -49,13 +49,13 @@ void ClapTrap::attack(const std::string& target){
 }
 
 void ClapTrap::takeDamage(unsigned int amount){
-	std::cout << "ClapTrap " << _name << " lost " << amount << " of hit points.\n";
+	std::cout << _name << " lost " << amount << " of hit points.\n";
 	_hitPoints -= amount;
 	std::cout << "\t current hit point : " << _hitPoints << std::endl;
 }
 
 void ClapTrap::beRepared(unsigned int amount){
-	std::cout << "ClapTrap " << _name << " gained " << amount << " of hit points.\n";
+	std::cout << _name << " gained " << amount << " of hit points.\n";
 	_hitPoints += amount;
 	std::cout << "\t current hit point : " << _hitPoints << std::endl;
 }
