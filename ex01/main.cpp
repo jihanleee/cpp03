@@ -7,7 +7,6 @@ int main( void ) {
 	ClapTrap b( a );
 	ClapTrap c("c"); */
 	ScavTrap sc("scavdude");
-
 /* 	c = b; */
 	sc.attack("dumb guy");
 	sc.takeDamage(10);

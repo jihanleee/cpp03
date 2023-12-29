@@ -39,7 +39,7 @@ FragTrap & FragTrap::operator = (const FragTrap &a) {
 }
 
 void FragTrap::attack(const std::string& target){
-	if (_energyPoints > 1)
+	if (_energyPoints > 0)
 	{
 		_energyPoints--;
 		std::cout << "FragTrap " << _name << " attacks " << target << ", causing "<< _attackDamage << " points of damage!\n";
