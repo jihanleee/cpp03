@@ -22,7 +22,7 @@ ScavTrap::~ScavTrap() {
 	std::cout << "ScavTrap Destructor called\n";
 }
 
-ScavTrap::ScavTrap(ScavTrap &a) :ClapTrap(){
+ScavTrap::ScavTrap(ScavTrap &a) {
 	std::cout << "Copy constructor called\n";
 	_name = a._name;
 	_hitPoints = a._hitPoints;
